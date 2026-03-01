@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const imageName = urlParams.get('notz (1)'); // Pega o nome da imagem na URL
+    if (imageName) {
+      // Redireciona para a imagem (ex: background.png)
+      window.location.href = imageName + ".png"; 
+    }
+  </script>
+</body>
+</html>
